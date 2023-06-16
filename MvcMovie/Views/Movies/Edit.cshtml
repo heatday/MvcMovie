@@ -3,9 +3,10 @@
 @{
     ViewData["Title"] = "Church Movies - Edit Movie";
 }
-
-<h1>Edit Church Movie</h1>
-<p>Edit page for church movies.You can update the details of a specific movie in the collection. Make changes to the movie's title, release date, genre, rating, and price.</p>
+<div class="centered-container">
+    <h1>Edit Church Movie</h1>
+    <p>Edit page for church movies.You can update the details of a specific movie in the collection. Make changes to the movie's title, release date, genre, rating, and price.</p>
+</div>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -38,13 +39,19 @@
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <label asp-for="ImageName" class="control-label"></label>
+                <input asp-for="ImageName" type="file" class="form-control" />
+                <span asp-validation-for="ImageName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="oval-button" />
             </div>
         </form>
     </div>
 </div>
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="oval-button">Back to List</a>
 </div>
 @section Scripts {
     @{

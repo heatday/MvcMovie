@@ -25,7 +25,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2011-06-03"),
                         Genre = "Adventure-Drama",
                         Rating = "PG",
-                        Price = 9.99M
+                        Price = 9.99M,
+                        ImageName = "17 Miracles.jpeg" // Set the image file name for this movie
                     },
                     new Movie
                     {
@@ -33,7 +34,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2013-05-31"),
                         Genre = "Adventure-Drama",
                         Rating = "PG",
-                        Price = 19.99M
+                        Price = 19.99M,
+                        ImageName = "Ephraim's Rescue.jpg"
                     },
                     new Movie
                     {
@@ -41,7 +43,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2008-11-25"),
                         Genre = "Romance",
                         Rating = "PG",
-                        Price = 3.99M
+                        Price = 3.99M,
+                        ImageName = "Gordon B. Hinckley A Giant Among Men.jpg"
                     },
                     new Movie
                     {
@@ -49,7 +52,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2017-06-02"),
                         Genre = "Drama",
                         Rating = "PG",
-                        Price = 9.99M
+                        Price = 9.99M,
+                        ImageName = "Love, Kennedy.jpg"
                     },
                     new Movie
                     {
@@ -57,7 +61,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2014-10-10"),
                         Genre = "Documentary",
                         Rating = "PG",
-                        Price = 11.99M
+                        Price = 11.99M,
+                        ImageName = "Meet the Mormons.jpg"
                     },
                     new Movie
                     {
@@ -65,7 +70,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2009-09-01"),
                         Genre = "Documentary",
                         Rating = "PG",
-                        Price = 0.00M
+                        Price = 0.00M,
+                        ImageName = "On the Lord's Errand The Life of Thomas S. Monson.jpg"
                     },
                     new Movie
                     {
@@ -73,7 +79,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2004-09-07"),
                         Genre = "Comedy-Drama",
                         Rating = "PG",
-                        Price = 19.99M
+                        Price = 19.99M,
+                        ImageName = "The Best Two Years.jpg"
                     },
                     new Movie
                     {
@@ -81,7 +88,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2015-06-05"),
                         Genre = "Drama",
                         Rating = "PG-13",
-                        Price = 0.00M
+                        Price = 0.00M,
+                        ImageName = "The Cokeville Miracle.jpg"
                     },
                     new Movie
                     {
@@ -89,7 +97,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2019-07-24"),
                         Genre = "Comedy-Drama",
                         Rating = "PG",
-                        Price = 14.99M
+                        Price = 14.99M,
+                        ImageName = "The Fighting Preacher.jpeg"
                     },
                     new Movie
                     {
@@ -97,7 +106,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2003-08-29"),
                         Genre = "Adventure",
                         Rating = "G",
-                        Price = 12.99M
+                        Price = 12.99M,
+                        ImageName = "The Legend of Johnny Lingo.jpeg"
                     },
                     new Movie
                     {
@@ -105,7 +115,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2001-12-14"),
                         Genre = "Adventure-Drama",
                         Rating = "PG",
-                        Price = 15.99M
+                        Price = 15.99M,
+                        ImageName = "17 Miracles.jpeg"
                     },
                     new Movie
                     {
@@ -113,7 +124,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2019-06-28"),
                         Genre = "Adventure-Drama",
                         Rating = "PG-13",
-                        Price = 12.99M
+                        Price = 12.99M,
+                        ImageName = "The Other Side of Heaven.jpg"
                     },
                     new Movie
                     {
@@ -121,7 +133,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2003-01-31"),
                         Genre = "Comedy",
                         Rating = "PG",
-                        Price = 15.99M
+                        Price = 15.99M,
+                        ImageName = "The RM.jpg"
                     },
                     new Movie
                     {
@@ -129,7 +142,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2013-10-09"),
                         Genre = "Drama",
                         Rating = "PG-13",
-                        Price = 19.99M
+                        Price = 19.99M,
+                        ImageName = "The Saratov Approach.jpg"
                     },
                     new Movie
                     {
@@ -137,7 +151,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2002-01-30"),
                         Genre = "Comedy-Drama",
                         Rating = "PG",
-                        Price = 19.99M
+                        Price = 19.99M,
+                        ImageName = "The Singles Ward.jpeg"
                     }
                 );
                 context.SaveChanges();

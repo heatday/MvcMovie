@@ -1,5 +1,4 @@
-﻿
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MvcMovie.Models;
@@ -25,4 +24,6 @@ public class Movie
     [StringLength(5)]
     [Required]
     public string? Rating { get; set; }
+    [StringLength(100)]
+    public string ImageName { get; set; }
 }

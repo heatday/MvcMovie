@@ -3,47 +3,55 @@
 @{
     ViewData["Title"] = "Church Movies - Movie Details";
 }
+<div class="centered-container">
+    <h1>Church Movies Details</h1>
+    <p>Detail page for church movies. You can check the details.</p>
 
-<h1>Church Movies Details</h1>
-<p>Detail page for church movies. You can check the details.</p>
-
-<div>
-    <h4>Movie</h4>
+    <div>
+        <h4>Movie</h4>
+    </div>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ReleaseDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ReleaseDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Genre)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Genre)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Rating)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Rating)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-    </dl>
+    <div class="table-container">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Title)</th>
+                    <td>@Html.DisplayFor(model => model.Title)</td>
+                </tr>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.ReleaseDate)</th>
+                    <td>@Html.DisplayFor(model => model.ReleaseDate)</td>
+                </tr>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Genre)</th>
+                    <td>@Html.DisplayFor(model => model.Genre)</td>
+                </tr>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Rating)</th>
+                    <td>@Html.DisplayFor(model => model.Rating)</td>
+                </tr>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Price)</th>
+                    <td>@Html.DisplayFor(model => model.Price)</td>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <td>
+                        @if (!string.IsNullOrEmpty(Model.ImageName))
+                        {
+                            <img src="~/@Model.ImageName" alt="Movie Image" style="width: 250px; height: 220px;" />
+                        }
+                        else
+                        {
+                            <p>No image available</p>
+                        }
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div class="centered-container">
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="oval-button">Edit</a> |
+    <a asp-action="Index" class="oval-button">Back to List</a>
 </div>
